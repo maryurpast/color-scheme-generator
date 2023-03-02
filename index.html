@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color-Scheme-Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header><h1>Color-Scheme-Generator</h1></header>
+
+    <main>
+      <!-- App -->
+
+      <div class="container">
+        <!-- Tools Container -->
+
+        <div class="color-picker">
+          <input type="color" />
+          <select name="colors" id="colors">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+          </select>
+          <button id="get-color">Get color scheme</button>
+        </div>
+
+        <!-- Color Scheme -->
+
+        <div class="colors-scheme-container">
+          <div class="color" style="background-color: #f55a5a">
+            <p>#f55a5a</p>
+          </div>
+          <div class="color" style="background-color: #2b283a">
+            <p>#2b283a</p>
+          </div>
+          <div class="color" style="background-color: #fbf3ab">
+            <p>#fbf3ab</p>
+          </div>
+          <div class="color" style="background-color: #aad1b6">
+            <p>#aad1b6</p>
+          </div>
+          <div class="color" style="background-color: #a626d3">
+            <p>#a626d3</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/index.js"></script>
+  </body>
+</html>

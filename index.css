@@ -1,0 +1,142 @@
+body {
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  background-color: #3d4b60;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px #000;
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  font-size: 24px;
+  margin: 14px 0;
+}
+
+main {
+  padding-top: 57px;
+}
+
+.container {
+  width: 550px;
+  height: 550px;
+  margin: 0 auto;
+}
+
+.color-picker {
+  padding: 24px 0;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  width: 61px;
+  height: 43px;
+}
+
+select {
+  width: 312px;
+  padding: 10px 0 10px 13px;
+  color: #d5d4d8;
+  background-color: #1f293a;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+button {
+  padding: 13px 11px;
+  color: #fff;
+  background-color: #3d4b60;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  transition: all 100ms ease-in-out;
+}
+
+button:hover,
+button:focus {
+  opacity: 0.8;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.colors-scheme-container {
+  height: 100%;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.color {
+  display: flex;
+  align-items: flex-end;
+}
+
+.color > p {
+  background-color: #1f2937;
+  width: 100%;
+  margin: 0;
+  padding: 14px;
+  text-align: center;
+  font-size: 12px;
+  color: #d5d4d8;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  .colors-scheme-container {
+    width: 100vw;
+    height: 60vh;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+
+  main {
+    padding-top: 32px;
+  }
+
+  .color-picker {
+    padding: 14px 0;
+  }
+
+  select {
+    width: 150px;
+    padding: 4px 0 4px 8px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px;
+  }
+}
