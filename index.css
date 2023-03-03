@@ -4,6 +4,8 @@ body {
   background-color: #3d4b60;
 }
 
+/* Header */
+
 header {
   position: fixed;
   width: 100%;
@@ -30,15 +32,7 @@ h1 {
   margin: 14px 0;
 }
 
-main {
-  padding-top: 57px;
-}
-
-.container {
-  width: 550px;
-  height: 550px;
-  margin: 0 auto;
-}
+/* Color Picker */
 
 .color-picker {
   padding: 24px 0;
@@ -83,6 +77,18 @@ button:active {
   transform: scale(0.97);
 }
 
+/* Layout */
+
+main {
+  padding-top: 57px;
+}
+
+.container {
+  width: 550px;
+  height: 550px;
+  margin: 0 auto;
+}
+
 .colors-scheme-container {
   height: 100%;
   display: grid;
@@ -104,7 +110,11 @@ button:active {
   color: #d5d4d8;
 }
 
+/* Media queries */
+
 @media (max-width: 767px) {
+  /* media layout changes */
+
   .container {
     width: 100vw;
     height: 100vh;
@@ -124,6 +134,8 @@ button:active {
   main {
     padding-top: 32px;
   }
+
+  /* media color-picker changes */
 
   .color-picker {
     padding: 14px 0;
