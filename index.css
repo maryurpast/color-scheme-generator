@@ -110,6 +110,11 @@ main {
   color: #d5d4d8;
 }
 
+.color > p:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
 /* Media queries */
 
 @media (max-width: 767px) {

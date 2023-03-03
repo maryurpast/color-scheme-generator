@@ -19,6 +19,24 @@ document.getElementById("get-color").addEventListener("click", function () {
     });
 });
 
+// Copy color to clipboard
+
+document.addEventListener(
+  "click",
+
+  async function (e) {
+    let checkedColor = e.target.dataset.color;
+    if (e.target.dataset.color) {
+      try {
+        await navigator.clipboard.writeText(checkedColor);
+        alert("Copied to clipboard");
+      } catch (err) {
+        console.error("Failed to copy: ", err);
+      }
+    }
+  }
+);
+
 // Rendering colors from the array
 
 function renderColors(colorsArray) {
@@ -26,10 +44,9 @@ function renderColors(colorsArray) {
   for (let color of colorsArray) {
     colorsHtml += `
 	<div class="color" style="background-color: ${color}">
-            <p>${color}</p>
+            <p data-color='${color}'>${color}</p>
           </div>
 	`;
   }
-
   document.getElementById("color-scheme").innerHTML = colorsHtml;
 }
